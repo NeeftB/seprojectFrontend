@@ -1,0 +1,64 @@
+.slider-container{
+    width: 100vw;
+    height: auto;    
+  
+}
+
+.slider-content-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap; /*change to row wrap */
+}
+
+.slider-image-container{
+    width: 100%;  /*Change to 50%*/
+    height: auto;
+    margin: 0;
+}
+
+.slider-image-container img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;      /*Make height bigger for big screens*/
+}
+
+.slider-text-container {
+    width: 100%; /*Change to 50%*/
+    height: 250px; /*Make height bigger for big screens*/
+    background-color: green;
+    padding: 1em;
+    margin: 0;
+}
+
+.slider-text-container p {
+    position: relative;
+    margin: 0;
+    color: white;
+    
+}
+
+
+/*Change to Slick settings*/
+.slick-dots {
+    background-color: darkgreen;
+    bottom: 0;
+}
+
+.slick-dots li {
+    width: 35px;
+    height: 5px;
+    margin: 10px 3px;
+}
+.slick-dots li button:before {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    color: transparent
+}
+
+.slick-dots li.slick-active button:before {
+    color: transparent;
+}

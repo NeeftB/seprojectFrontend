@@ -1,0 +1,79 @@
+.edit-container{
+}
+
+.head-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.image-container-buttons{
+    position: absolute;
+    height: auto;
+    right: 0;
+    bottom: 0px;
+    background: rgba(255,255, 255, 0.7);
+    border-top-left-radius: 3px;
+}
+
+.image-container-buttons button{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0.8em;
+    font-size: 1rem;
+}
+
+.edit-image-label {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 1rem;    
+    padding: 0.8em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit-image {
+    display: none;   
+}
+
+.blog-data-section{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.blog-data-section label {
+
+}
+
+.blog-data-section input{
+
+}
+
+.edit-blog-data-container {    
+    padding: 1em
+}
+
+.edit-blog-form .head-image-container img{
+    width: 100%;
+}
+
+.blog-image-container img{
+    width: 100%;
+}
+
+.image-test {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}

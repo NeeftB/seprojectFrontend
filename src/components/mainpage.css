@@ -1,0 +1,190 @@
+.header {
+    position: relative;
+    width: 80%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    background-color: teal;
+}
+
+.content-item {
+    position: relative;
+    width: 100%;
+    display: flex; 
+    flex-flow: column wrap;
+    padding-top: 1.6em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(4, 83, 83);
+}
+
+.content-item img{
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-item-text-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap; 
+    text-align: center;   
+    font-size: 1rem;
+}
+
+.content-item-text-category {
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.content-item-text-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.2em;
+}
+.content-item-text-date {
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+
+.content-item-text-text {
+    width: 100%;
+}
+
+.content-item-btn-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 3em auto 2em auto;
+}
+
+.content-item-btn-container button{
+    width: 40%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+
+.content-item-text-username {
+    width: 50%;
+    text-align: center;
+    font-size: 0.8em;
+}
+.content-item-text-rating {
+    width: 25%;
+    text-align: center;    
+    font-size: 0.8em;
+    border-right: 1px solid black;
+}
+.content-item-text-views {
+    width: 25%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+    margin: 2em auto;
+    order: 0;
+}
+.logo-container img {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+.login-btn-container {
+    position: relative;
+    order: 2;
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.login-btn{
+    position: relative;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 12px;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    border: 1px solid orange;
+    border-radius: 6px;
+}
+
+.socialmedia-container {
+    display: none; /*Only show in bigger screens */
+}
+
+
+
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5em;
+}
+
+.main-buttons-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1.2em auto;   
+}
+
+.main-button {
+    position: relative;
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: green;  
+    border: none;
+    text-align: left;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+    padding-left: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-button span {
+    padding: 0.5em 0;
+    font-size: 1rem;
+    color: black;
+    font-weight: normal;
+}

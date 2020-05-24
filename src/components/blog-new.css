@@ -1,0 +1,90 @@
+.head-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.file-input {
+    display: none;   
+}
+
+.new-image-label {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px dashed #999;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file-label {    
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.head-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.new-blog-data-container{
+    position: relative;
+    padding: 1em;
+}
+
+.blog-data-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.blog-data-section input {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding-left: 0.2em;
+}
+
+.blog-data-section textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding-left: 0.2em;
+}
+
+.new-blog-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto 2em auto;
+}
+
+.new-blog-buttons button{
+    position: relative;
+    text-decoration: none;
+    width: 25%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 3px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}

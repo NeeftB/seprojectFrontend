@@ -1,0 +1,133 @@
+.navigation-container {
+    position: relative;
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+/*NORMAL NAVIGATION */
+
+/*NORMAL NAVIGATION END*/
+
+
+/*MOBILE NAVIGATION */
+.navbar-mobile-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu-btn {
+    position: relative;
+    width: 25px;
+    height: auto;
+    display: block;
+    padding-top: 0.2em;
+    background-color:transparent;
+    border: 1px solid transparent;
+    color: #BE9063;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.nav-menu-btn span
+{
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  border-radius: 3px;
+  background-color: #BE9063;
+  z-index: 1; 
+  transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0),
+              background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+              opacity 0.55s ease;
+}
+
+.closebtn {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+  }
+
+.nav-menu-mobile-overlay{        
+    position: fixed;
+    visibility: hidden;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+.nav-menu-mobile {    
+    position: absolute;
+    top: 0;
+    left: -80%;
+    z-index: 10;
+    width: 80%;
+    height: 100%;
+    background-color: green;
+    transition: 0.5s;
+}
+
+.nav-mobile-btn-container {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    top: 60px;
+    left: 0;
+}
+
+.nav-mobile-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0.4em auto;
+    height: auto;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.nav-mobile-btn .nav-icon {
+    display: inline-block;
+    flex-basis: 1;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 2px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-mobile-btn .nav-text {    
+    font-size: 1.8rem;
+    display: inline-block;
+    color: white;
+    width: 100%;
+    flex-basis: 2;
+    margin: 20px auto;
+}
+
+.show-overlay {
+    visibility: visible;
+    background-color: rgba(0, 0,0, 0.6);
+}
+
+.show-nav-menu-mobile {
+    left: 0;
+} 
+
+/*MOBILE NAVIGATION END*/
+
