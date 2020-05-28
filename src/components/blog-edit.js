@@ -147,6 +147,19 @@ class EditBlog extends React.Component {
         this.setState(prevstate => ({ published: !prevstate.published }), () => this.handleUpdate(e))
     }
 
+    handleDelete = e => {
+        e.preventDefault()
+        axios.delete(`http://localhost:8080/seproject/services/rest/reports/${this.state.report['reportNumber']}`)
+            .then(res => {
+                if (res.status === 200) {
+                    this.props.history.push("/user/blogs")
+                    URL.revokeObjectURL(this.state.objectUrl)
+                }
+            }).catch(error => {
+                console.log(error)
+            })
+    }
+
     handleCancel = () => {
         this.props.history.push("/user/blogs")
     }
@@ -191,7 +204,7 @@ class EditBlog extends React.Component {
                         </div>
                         <div className="blog-data-section">
                             <label htmlFor="category" >CATEGORY</label>
-                            <input id="category" name="area" defaultValue={report.category} />
+                            <input id="category" name="category" defaultValue={report.category} />
                         </div>
 
                         <div className="blog-data-section">
@@ -199,9 +212,10 @@ class EditBlog extends React.Component {
                             <textarea id="paragraph-one" name="paragraph-one" defaultValue={report.paragraphOne} />
                         </div>
                     </div>
-                    <div className="new-blog-buttons">
+                    <div className="edit-blog-buttons">
                         <button type="button" onClick={this.handleCancel} className="cancel-edit-blog-btn">CANCEL</button>
                         <button type="submit" onClick={this.handleUpdate} className="save-edit-blog-btn" name="save_btn">UPDATE</button>
+                        <button type="submit" onClick={this.handleDelete} className="delete-edit-blog-btn" name="save_btn">DELETE</button>
                         {this.state.published ?
                             <button type="submit" onClick={this.handlePublish} className="publish-edit-blog-btn" name="unpublish_btn">UNPUBLISH</button> :
 

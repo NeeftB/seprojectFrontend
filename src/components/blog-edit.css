@@ -77,3 +77,23 @@
     height: 100%;
     object-fit: cover;
 }
+
+.edit-blog-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto 2em auto;
+}
+
+.edit-blog-buttons button{
+    position: relative;
+    text-decoration: none;
+    width: 22%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 3px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}

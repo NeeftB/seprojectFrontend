@@ -96,7 +96,7 @@ class NewBlog extends React.Component {
                         </div>
                         <div className="blog-data-section">
                             <label htmlFor="country">COUNTRY</label>
-                            <input id="country" name="country" defaultValue="country" />
+                            <input id="country" name="country" defaultValue="Netherlands" />
                         </div>
                         <div className="blog-data-section">
                             <label htmlFor="region" >REGION</label>

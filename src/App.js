@@ -10,6 +10,7 @@ import UserPersonal from './components/user-personal';
 import UserBlogs from './components/user-blogs';
 import EditBlog from './components/blog-edit'
 import NewBlog from './components/blog-new';
+import BlogOverview from './components/blog-overview';
 
 const routes = [
   //Login route wordt in de code toegevoegd ivm properties
@@ -20,7 +21,7 @@ const routes = [
   },
   {
     path: "/blog",
-    component: () => <div><h2>Blog</h2></div>
+    component: <BlogOverview />
   },
   {
     path: "/register",
