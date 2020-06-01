@@ -16,6 +16,7 @@ const RegisterSchema = Yup.object({
 
 function setData(res) {
     localStorage.setItem("user", JSON.stringify(res.data))
+    localStorage.setItem("token", JSON.stringify(res.headers["authorization"]))
     
 }
 
@@ -35,8 +36,7 @@ function Login(props) {
                     })
                     .then(res => {
                         if (res && res.status === 200) {
-                            setData(res)
-                            console.log(res.headers['Authorization'])
+                            setData(res)                         
                             props.setIsLoggedIn(true)
                             props.history.push('/')
                         }

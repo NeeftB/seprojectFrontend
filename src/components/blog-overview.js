@@ -32,7 +32,7 @@ class BlogOverview extends React.Component {
     }
 
     getBlogs = () => {
-        const urlData = `http://localhost:8080/seproject/services/rest/reports/allpublishedreports`
+        const urlData = `http://localhost:8080/seproject/services/rest/reports/published`
 
         axios.get(urlData)
             .then(res => {
@@ -46,7 +46,7 @@ class BlogOverview extends React.Component {
     getImages = (reports) => {
 
         reports.forEach((report) => {
-            const urlImages = `http://localhost:8080/seproject/services/rest/photos/getphotos/${report.reportNumber}`
+            const urlImages = `http://localhost:8080/seproject/services/rest/photos/${report.reportNumber}`
             axios.get(urlImages, { responseType: 'blob' })
                 .then(res => {
                     let blob = new Blob([res.data], { type: "image/jpeg" })

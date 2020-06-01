@@ -42,7 +42,7 @@ class BlogContainer extends React.Component {
     getImages = (reports) => {
 
         reports.forEach((report) => {
-            const urlImages = `http://localhost:8080/seproject/services/rest/photos/getphotos/${report.reportNumber}`
+            const urlImages = `http://localhost:8080/seproject/services/rest/photos/${report.reportNumber}`
             axios.get(urlImages, { responseType: 'blob' })
                 .then(res => {
                     let blob = new Blob([res.data], { type: "image/jpeg" })
